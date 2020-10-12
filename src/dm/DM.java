@@ -8,6 +8,8 @@ package dm;
 import dm.model.Grille;
 import dm.model.Move;
 import dm.model.State;
+import dm.model.c.Case;
+import dm.model.c.CasePiece;
 import dm.model.c.Piece;
 
 /**
@@ -21,16 +23,16 @@ public class DM {
      */
     public static void main(String[] args) {
         Grille grille = new Grille(15,15);
-        Piece p = new Piece(1,1,'l');                      
-        
-        
+        Piece p = new Piece(5,5,'t');
         grille.addPiece(p);
         grille.afficheGrille();
-        System.out.println("--------------------");
-        State s = new State(grille);
-        Move m = new Move(p,1,5);
-        s.play(m);
+        grille.applyRotation(p);
         grille.afficheGrille();
+        grille.applyRotation(p);
+        grille.afficheGrille();
+        grille.applyRotation(p);
+        grille.afficheGrille();
+
     }
     
 }

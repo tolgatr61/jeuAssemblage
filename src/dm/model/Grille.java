@@ -44,8 +44,25 @@ public class Grille {
     }
 
     public void addPiece(Piece p) {
-        this.grille[p.getX()][p.getY()] = p;
+        for (Case shape : p.getShape()) {
+            System.out.println(shape.getX() + "," + shape.getY() + "," + p.getX() + "," + p.getY());
+            this.grille[p.getX() + shape.getX()][p.getY() + shape.getY()] = shape;
+        }
     }
+    
+    public void removePiece(Piece p) {
+        for (Case shape : p.getShape()) {
+            //System.out.println(shape.getX() + "," + shape.getY() + "," + p.getX() + "," + p.getY());
+            this.grille[p.getX() + shape.getX()][p.getY() + shape.getY()] = new Case(p.getX() + shape.getX(), p.getY() + shape.getY());
+        }
+    }
+    
+    public void applyRotation(Piece p) {
+        removePiece(p);
+        p.rotation();
+        addPiece(p);
+    }
+    
     public Integer getX() {
         return x;
     }
@@ -67,10 +84,5 @@ public class Grille {
     
     public Case[][] getGrille() {
         return this.grille;
-    }
-    
-    public void test() {
-        Case[] c = new Case[3];
-        
     }
 }

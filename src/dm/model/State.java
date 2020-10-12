@@ -18,12 +18,13 @@ public class State {
     public State(Grille grille) {
         this.grille = grille;
     }
-    
+    /*
     public void play(Move move) {
         if (move.getPiece().getForme() == 'l') {
             this.grille.getGrille()[move.getPiece().getX()][move.getPiece().getY()] = new Case(move.getPiece().getX(),move.getPiece().getY());
             this.grille.getGrille()[move.getX()][move.getY()] = move.getPiece();
         }
     }
+*/
     
 }

@@ -14,15 +14,18 @@ public class Case {
     private Integer x;
     private Integer y;
     private char forme;
+    private Piece piece;
     
     public Case(Integer x, Integer y, char forme) {
         this.x = x;
         this.y = y;
         this.forme = forme;
+        this.piece = null;
     }
     
     public Case(Integer x, Integer y) {
         this(x,y,'.');
+        this.piece = null;
     }
 
     public char getForme() {
@@ -40,4 +43,13 @@ public class Case {
     public boolean collision() {
         return false;
     }
+    
+    public boolean isPiece() {
+        return false;
+    }
+    
+    public Piece getPiece() {
+        return this.piece;
+    }
+
 }

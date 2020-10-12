@@ -5,10 +5,9 @@
         <group>
             <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/c/Piece.java</file>
             <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/Grille.java</file>
-            <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/State.java</file>
-            <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/Move.java</file>
             <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/DM.java</file>
             <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/c/Mur.java</file>
+            <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/c/CasePiece.java</file>
             <file>file:/C:/Users/Tolga/Desktop/DM/src/dm/model/c/Case.java</file>
         </group>
     </open-files>

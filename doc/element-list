@@ -1,0 +1,11 @@
+src.controller
+src.model
+src.model.action
+src.model.ia
+src.model.jeu
+src.model.jeu.listeners
+src.model.parser
+src.model.parser.json
+src.model.piece
+src.model.piece.pieceType
+src.view
